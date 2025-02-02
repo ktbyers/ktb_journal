@@ -14,4 +14,27 @@ Implemented a RAG solution (ChromaDB) to improve my Ansible Course Q & A Slack b
 
 Transcribed Ansible Course class2 transcripts using Python Whisper solution.
 
-Decided my Slack Bot plus Course Q&A plus LLM integration (Claude Sonnet) was a convoluted mess of spaghetti code with way too much other stuff going on. Main issues--lots of logging and other code interspersed in the code (making the code hard to follow), too tight of coupling between my Course Q&A code and Claude (i.e. the Course Q&A and LLM interface needed to be abstracted
+Decided my Slack Bot plus Course Q&A plus LLM integration (Claude Sonnet) was a convoluted mess of spaghetti code with way too much other stuff going on. Main issues--lots of logging and other code interspersed in the code (making the code hard to follow), too tight of coupling between my Course Q&A code and Claude (i.e. the Course Q&A and LLM interface needed to be abstracted such that different LLMs could be used more easily), not easy enough for me to follow the code flow and the interactions of the different parts of the system. Decouple RAG implementation from CourseQA class.
+
+Revamped the code basically starting from scratch to layer on: 
+1. LLM Interface using a Python Abstract Base Class
+2. Implement tests for LLM Interface and for Anthropic implemenation of this interface.
+3. Start implementing CourseQA class.
+4. Implement tests for CourseQA class.
+5. Implement RAG class.
+6. RAG tests
+7. Integrate CourseQA and RAG; expand on tests
+8. Expand LLM Interface to add the `ask_question` method.
+9. Expand Anthropic Tests
+10. Verify communication with Claude Anthropic is working via the API
+11. Add tests for `ask_question` method.
+12. Add integration tests that actually test the CourseQA to Claude communication.
+13. Add in the Slack Bot code.
+14. Get Slack Bot working.
+15. Add Slack Bot test code.
+16. Integration test of Slack Bot. This took a lot of time as I ultimately needed two Bots here--the actual Ansible Course Bot and then a PyTest bot. The PyTest bot connects via the WebClient and asks questions to the Ansible Course Bot. The Ansible Course Bot runs in a separate thread and answers questions. The PyTest bot verifies these responses.
+17. Integrating a custom prompt loaded from a file in.
+18. Adding / updating tests for this custom prompt.
+19. Adding "tools" section into the LLM Interface. The tools initially will be `list_files`, `file_loader`, `retrieve_rag`. Basically Slack will communicate to LLM via my CourseQA code and the LLM will make decisions on retrieving files and retrieving RAG based on what is asked.
+20. Adding tests for this initial tool definition mainly focussed on the file_loader tool.
+
