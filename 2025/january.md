@@ -38,3 +38,29 @@ Revamped the code basically starting from scratch to layer on:
 19. Adding "tools" section into the LLM Interface. The tools initially will be `list_files`, `file_loader`, `retrieve_rag`. Basically Slack will communicate to LLM via my CourseQA code and the LLM will make decisions on retrieving files and retrieving RAG based on what is asked.
 20. Adding tests for this initial tool definition mainly focussed on the file_loader tool.
 
+
+What else?
+
+Worked on reducing AWS daily costs particularly in the EC2-Other category. This mainly consists of deleting old AMIs and Snapshots. Created an Ansible Playbook to list all of my AMIs in the US-West1 region. Created an Ansible playbook with a set of checks to remove an AMI and Snapshot that I specify.
+
+Reduced AWS daily EC2-other costs from $17.15/day to $14.34/day. This saves $2.81 per day ($84 per month or about $1000 per year).
+
+
+What else?
+
+Ran the Ansible Network Automation Course session including building the lab environment and all the standard items associated with this.
+
+
+What else?
+
+Running in January ~145 miles, 8750ft in elevation (22 runs)  24 hours
+9 other workouts (ex. bike, treadmill, ex bike)  7 hours
+
+Ran ~40 minute 10K (39:20 on Strava / 40:40 on Garmin) so depending on which one you believe. Garmin was a bit wonky at points during the run.
+
+
+What else?
+
+Trip to Aspen with friends. Skied two days.
+
+Anything else?
