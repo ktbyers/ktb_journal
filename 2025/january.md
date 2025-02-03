@@ -67,14 +67,23 @@ Reviewed and merged one PR for NAPALM.
 _Not really the best month for open source work_
 
 
-Running in January ~145 miles, 8750ft in elevation (22 runs)  24 hours
-9 other workouts (ex. bike, treadmill, ex bike)  7 hours
+## Exercise and My Crazy Running Addiction
 
-Ran ~40 minute 10K (39:20 on Strava / 40:40 on Garmin) so depending on which one you believe. Garmin was a bit wonky at points during the run.
+Ran about 145 miles in January with 8750ft in elevation (roughly 22 runs and about 24 total hours running).
+
+Roughly nine other workouts during the month (roughly 7 hours, exercise bike, treadmill, some weights).
+
+Races / time trials — Ran a ~40 minute 10K time trial depending on which data you believe (39:20 on Strava; 40:40 on Garmin). Pretty happy with this for age 53.
+
+Favorite running trail of the month—Coastal Trail in Marin. Watch the [Miller vs Hawks YouTube Video]([https://pages.github.com/](https://www.youtube.com/watch?v=7DCR03UDggA&t=318s).
 
 
-What else?
+## Favorite Family Board Game
 
-Trip to Aspen with friends. Skied two days.
+Definitely Terraforming Mars. We purchased TM Prelude for Christmas so this added a nice wrinkle to our all time family favorite game.
 
-Anything else?
+
+## Favorite Song / Music
+
+Became a bit addicted to listening to "Present Tense" by Pearl Jam. With a second place to "Stick Season" by Noah Kahan.
+
