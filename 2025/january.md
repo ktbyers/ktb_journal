@@ -1,9 +1,11 @@
-# January Review
+# What happened in January
+
+## High level
 
 Started using Cursor + Composer as the main workflow for coding. Generally had a very positive experience with it—except it has annoying aspect of constantly crashing and needing to restart which I haven't been able to fix yet. Using Sonnet 3.5 almost exclusively as my coding LLM (though I will occassionally use ChatGPT for questions that require direct Internet access).
 
 
-# AI Coding Items
+## AI Coding Items
 
 Created a Python program using AI and Whisper to translate my course videos (.mp4 files) to text.
 
@@ -17,26 +19,16 @@ Implemented a RAG solution (ChromaDB) to improve my Ansible Course Q & A Slack b
 
 Transcribed Ansible Course class2 using the Python Whisper solution.
 
-Started refactoring my Ansible Course Q & A Slack bot. Basically, the original code was a convoluted mess—way too much coupling of various parts of the system, too much logging and token tracking mixed into the code, and very hard to follow the program flow.
-
-
-Revamped the code basically starting from scratch to layer on: 
-1. LLM Interface using a Python Abstract Base Class
-2. Implement tests for LLM Interface and for Anthropic implemenation of this interface.
-3. Start implementing CourseQA class.
-4. Implement tests for CourseQA class.
-5. Implement RAG class.
-6. RAG tests
-7. Integrate CourseQA and RAG; expand on tests
-8. Expand LLM Interface to add the `ask_question` method.
-9. Expand Anthropic Tests
-10. Verify communication with Claude Anthropic is working via the API
-11. Add tests for `ask_question` method.
-12. Add integration tests that actually test the CourseQA to Claude communication.
-13. Add in the Slack Bot code.
-14. Get Slack Bot working.
-15. Add Slack Bot test code.
-16. Integration test of Slack Bot. This took a lot of time as I ultimately needed two Bots here--the actual Ansible Course Bot and then a PyTest bot. The PyTest bot connects via the WebClient and asks questions to the Ansible Course Bot. The Ansible Course Bot runs in a separate thread and answers questions. The PyTest bot verifies these responses.
+Started refactoring my Ansible Course Q & A Slack bot. Basically, the original code was a convoluted mess—way too much coupling of various parts of the system, too much logging and token tracking mixed into the code, and very hard to follow the program flow. The refactoring included:
+- Created a separate LLMInterface using a Python Abstract Base Class
+- Implemented tests for this LLMInterface and for the Anthropic implemenation of this Interface.
+- Started implementing a new CourseQA class with tests.
+- Implemented a new RAG class with tests.
+- Integrated CourseQA class with the RAG class.
+- Verified communication with Claude Anthropic is working via the API and via the CourseQA class (using the new LLMInterface)
+- Added integration tests that actually test the CourseQA to Claude communication.
+- Added in the Slack Bot code including tests.
+- Integration test of the Slack Bot code. This took quite a bit of time as I ultimately needed two Bots here—the actual Ansible Course Bot and then a PyTest bot. The PyTest bot connects via the WebClient and asks questions to the Ansible Course Bot. The Ansible Course Bot runs in a separate thread and answers questions. The PyTest bot verifies these responses.
 17. Integrating a custom prompt loaded from a file in.
 18. Adding / updating tests for this custom prompt.
 19. Adding "tools" section into the LLM Interface. The tools initially will be `list_files`, `file_loader`, `retrieve_rag`. Basically Slack will communicate to LLM via my CourseQA code and the LLM will make decisions on retrieving files and retrieving RAG based on what is asked.
