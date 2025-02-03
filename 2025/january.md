@@ -1,5 +1,7 @@
 # January? It's done already?
 
+Journal of things I worked on and some other items I accomplished in January of 2025.
+
 #### _"In rode the Lord of the Nazgûl. A great black shape against the fires beyond he loomed up, grown to a vast menace of despair. In rode the Lord of the Nazgûl, under the archway that no enemy ever yet had passed, and all fled before his face._
 
 #### _"All save one. There waiting, silent and still in the space before the Gate, sat Gandalf upon Shadowfax: Shadowfax who alone among the free horses of the earth endured the terror, unmoving, steadfast as a graven image in Rath Dínen. "You cannot enter here," said Gandalf, and the huge shadow halted. "Go back to the abyss prepared for you! Go back! Fall into the nothingness that awaits you and your Master. Go!"_ 
