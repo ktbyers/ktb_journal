@@ -79,7 +79,7 @@ Roughly nine other workouts during the month (roughly 7 hours, exercise bike, tr
 
 Races / time trials — Ran a ~40 minute 10K time trial depending on which data you believe (39:20 on Strava; 40:40 on Garmin). Pretty happy with this for age 53.
 
-Favorite running trail of the month—Coastal Trail in Marin. Watch the [Miller vs Hawks YouTube Video](https://www.youtube.com/watch?v=7DCR03UDggA&t=318s).
+Favorite running trail of the month—Coastal Trail in Marin, see the [Miller vs Hawks YouTube Video](https://www.youtube.com/watch?v=7DCR03UDggA&t=318s). This is probably my all-time favorite trail. It is almost hard to believe that it is real.
 
 Went skiing with friends for two days in Aspen.
 
