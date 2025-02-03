@@ -77,6 +77,8 @@ Races / time trials — Ran a ~40 minute 10K time trial depending on which data 
 
 Favorite running trail of the month—Coastal Trail in Marin. Watch the [Miller vs Hawks YouTube Video]([https://pages.github.com/](https://www.youtube.com/watch?v=7DCR03UDggA&t=318s).
 
+Went skiing with friends for two days in Aspen.
+
 
 ## Favorite Family Board Game
 
