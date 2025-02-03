@@ -1,5 +1,11 @@
 # What happened in January
 
+#### _"In rode the Lord of the Nazgûl. A great black shape against the fires beyond he loomed up, grown to a vast menace of despair. In rode the Lord of the Nazgûl, under the archway that no enemy ever yet had passed, and all fled before his face._
+
+#### _"All save one. There waiting, silent and still in the space before the Gate, sat Gandalf upon Shadowfax: Shadowfax who alone among the free horses of the earth endured the terror, unmoving, steadfast as a graven image in Rath Dínen. "You cannot enter here," said Gandalf, and the huge shadow halted. "Go back to the abyss prepared for you! Go back! Fall into the nothingness that awaits you and your Master. Go!"_ 
+
+Finished reading the Lord of the Rings Trilogy which I had started reading aloud to my son (during the pandemic). Though technically I might have finished this in late December.
+
 ## High level
 
 Started using Cursor + Composer as the main workflow for coding. Generally had a very positive experience with it—except it has annoying aspect of constantly crashing and needing to restart which I haven't been able to fix yet. Using Sonnet 3.5 almost exclusively as my coding LLM (though I will occassionally use ChatGPT for questions that require direct Internet access).
@@ -29,10 +35,7 @@ Started refactoring my Ansible Course Q & A Slack bot. Basically, the original c
 - Added integration tests that actually test the CourseQA to Claude communication.
 - Added in the Slack Bot code including tests.
 - Integration test of the Slack Bot code. This took quite a bit of time as I ultimately needed two Bots here—the actual Ansible Course Bot and then a PyTest bot. The PyTest bot connects via the WebClient and asks questions to the Ansible Course Bot. The Ansible Course Bot runs in a separate thread and answers questions. The PyTest bot verifies these responses.
-17. Integrating a custom prompt loaded from a file in.
-18. Adding / updating tests for this custom prompt.
-19. Adding "tools" section into the LLM Interface. The tools initially will be `list_files`, `file_loader`, `retrieve_rag`. Basically Slack will communicate to LLM via my CourseQA code and the LLM will make decisions on retrieving files and retrieving RAG based on what is asked.
-20. Adding tests for this initial tool definition mainly focussed on the file_loader tool.
+- Added a "tools" section into the LLMInterface. The tools initially will be `list_files`, `file_loader`, `retrieve_rag`. Basically Slack will communicate to the LLM via my CourseQA code and the LLM will make decisions on retrieving files and retrieving RAG based on what is asked via Slack. In other words, the LLM will call these tools when it needs to (hopefully).
 
 
 What else?
