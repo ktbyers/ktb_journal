@@ -51,9 +51,11 @@ Created an Ansible playbook with a set of verifications that remove an AMI and a
 Reduced AWS daily "EC2-Other" costs from $17.15/day to $14.34/day. This savings reduces my AWS spend by about $1000 per year.
 
 
-## Courses
+## Courses and Misc
 
 Started the Ansible Network Automation Course (session number27) including building the lab environment and all the standard items associated with this.
+
+Finished reviewing business accounting books for 2024 so that I could hand them over to the accountant.
 
 
 ## Open Source Work (Netmiko / NAPALM / Nornir)
