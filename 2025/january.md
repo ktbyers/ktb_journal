@@ -4,7 +4,7 @@
 
 #### _"All save one. There waiting, silent and still in the space before the Gate, sat Gandalf upon Shadowfax: Shadowfax who alone among the free horses of the earth endured the terror, unmoving, steadfast as a graven image in Rath Dínen. "You cannot enter here," said Gandalf, and the huge shadow halted. "Go back to the abyss prepared for you! Go back! Fall into the nothingness that awaits you and your Master. Go!"_ 
 
-Finished reading the Lord of the Rings Trilogy which I had started reading aloud to my son (during the pandemic). Though technically I might have finished this in late December.
+Finished reading the Lord of the Rings Trilogy which I had started reading with my son (during the pandemic). Unfortunately, my son is now too old for "reading with pops" (no, no I am not crying, something must have just gotten into my eyes).
 
 ## High level
 
