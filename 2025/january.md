@@ -38,19 +38,34 @@ Started refactoring my Ansible Course Q & A Slack bot. Basically, the original c
 - Added a "tools" section into the LLMInterface. The tools initially will be `list_files`, `file_loader`, `retrieve_rag`. Basically Slack will communicate to the LLM via my CourseQA code and the LLM will make decisions on retrieving files and retrieving RAG based on what is asked via Slack. In other words, the LLM will call these tools when it needs to (hopefully).
 
 
-What else?
+## Internal Tools and Cost Reductions
 
-Worked on reducing AWS daily costs particularly in the EC2-Other category. This mainly consists of deleting old AMIs and Snapshots. Created an Ansible Playbook to list all of my AMIs in the US-West1 region. Created an Ansible playbook with a set of checks to remove an AMI and Snapshot that I specify.
+Worked on reducing AWS daily costs particularly in the EC2-Other category. This mainly consists of deleting old AMIs and Snapshots. 
 
-Reduced AWS daily EC2-other costs from $17.15/day to $14.34/day. This saves $2.81 per day ($84 per month or about $1000 per year).
+Created an Ansible playbook to list all of my AMIs in the us-west1 region (to assist in the cost reduction process). 
+
+Created an Ansible playbook with a set of verifications that remove an AMI and a Snapshot that I specify.
+
+Reduced AWS daily "EC2-Other" costs from $17.15/day to $14.34/day. This savings reduces my AWS spend by about $1000 per year.
 
 
-What else?
+## Courses
 
-Ran the Ansible Network Automation Course session including building the lab environment and all the standard items associated with this.
+Started the Ansible Network Automation Course (session number27) including building the lab environment and all the standard items associated with this.
 
 
-What else?
+## Open Source Work (Netmiko / NAPALM / Nornir)
+
+Released Nornir 3.5
+
+Reviewed and merged three PRs into Netmiko.
+
+Fixed and verified Nornir license classifier breakage.
+
+Reviewed and merged one PR for NAPALM.
+
+_Not really the best month for open source work_
+
 
 Running in January ~145 miles, 8750ft in elevation (22 runs)  24 hours
 9 other workouts (ex. bike, treadmill, ex bike)  7 hours
