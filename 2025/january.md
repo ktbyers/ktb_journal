@@ -1,20 +1,24 @@
-# Hello
+# January Review
 
-The code creation was done using Cursor + Composer on my Apple laptop.
+Started using Cursor + Composer as the main workflow for coding. Generally had a very positive experience with it—except it has annoying aspect of constantly crashing and needing to restart which I haven't been able to fix yet. Using Sonnet 3.5 almost exclusively as my coding LLM (though I will occassionally use ChatGPT for questions that require direct Internet access).
+
+
+# AI Coding Items
 
 Created a Python program using AI and Whisper to translate my course videos (.mp4 files) to text.
 
+Built a summary Python tool that would consolidate all of the transcripts for Ansible Course lesson1 and other reference material into a single file that I could dump into the Claude context (to later ask questions of Claude with respect to the course material).
+
 Create a Custom GPT in OpenAI that you could use to ask questions about lesson1 of my Ansible Course.
 
-Built an initial version of a slack-bot solution that would communicate between Slack - my code - Anthropic (Claude Sonnet).
-
-Built a summary Python tool that would consolidate all of the transcripts for lesson1 and other reference material into a single file that I could dump into the Claude Context to ask questions about.
+Built an initial version of a Slack-bot solution that would communicate between Slack - my code - Claude Sonnet to answer questions about lesson1 of my Ansible Course.
 
 Implemented a RAG solution (ChromaDB) to improve my Ansible Course Q & A Slack bot.
 
-Transcribed Ansible Course class2 transcripts using Python Whisper solution.
+Transcribed Ansible Course class2 using the Python Whisper solution.
 
-Decided my Slack Bot plus Course Q&A plus LLM integration (Claude Sonnet) was a convoluted mess of spaghetti code with way too much other stuff going on. Main issues--lots of logging and other code interspersed in the code (making the code hard to follow), too tight of coupling between my Course Q&A code and Claude (i.e. the Course Q&A and LLM interface needed to be abstracted such that different LLMs could be used more easily), not easy enough for me to follow the code flow and the interactions of the different parts of the system. Decouple RAG implementation from CourseQA class.
+Started refactoring my Ansible Course Q & A Slack bot. Basically, the original code was a convoluted mess—way too much coupling of various parts of the system, too much logging and token tracking mixed into the code, and very hard to follow the program flow.
+
 
 Revamped the code basically starting from scratch to layer on: 
 1. LLM Interface using a Python Abstract Base Class
