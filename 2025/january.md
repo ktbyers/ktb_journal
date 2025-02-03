@@ -86,7 +86,7 @@ Went skiing with friends for two days in Aspen.
 
 ## Favorite Family Board Game
 
-Definitely Terraforming Mars. We purchased TM Prelude for Christmas so this added a nice wrinkle to our all time family favorite game.
+Definitely Terraforming Mars. We purchased TM Prelude for Christmas so this added a nice wrinkle to our all time favorite family game.
 
 
 ## Favorite Song / Music
