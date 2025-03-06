@@ -4,7 +4,8 @@ Journal of things I worked on and some other items I accomplished in February of
 
 #### _"It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity"_
 
-
+<br />
+<br />
 ## High level
 
 There were several miscellaneous things that I worked on this month:
