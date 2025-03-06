@@ -71,9 +71,13 @@ I tried three different fixes for the problem:
 + pattern = rf"(?:Accept this|{terminator})"
 ```
 
-3.   I implemented this fix as Netmiko debugging indicated that the regex was using parenthesis for a regex pattern and this can be problematic in certain situations. Basically, parenthesis can be used as a logical-or (for example, '(pattern1|patern2)') and it can also be used as a capture-group whereby you intend to save what is between the parenthesis so you can use it later. Usually, Netmiko patterns are using it for the logical-or case and you do NOT want the capture group behavior so you add the "?:" to the beginning of the parentheses '(?:pattern1|pattern2)'. There is a reason capture groups cause problems in Netmiko, but we would need to dig even deeper into the code to explain it.
+I implemented this fix as the debugging/logs indicated that the regex pattern was using parenthesis and I know from past experience (and from the log message) that parenthesis usage can be problematic.
 
-Anyways that fix didn't work :-)
+Basically, parenthesis in regex can be used as a logical-or (for example, `(pattern1|patern2)`) and it can also be used as a capture-group whereby you intend to save what is between the parenthesis so you can use it later. 
+
+Usually, Netmiko patterns are using it for the logical-or case and you do NOT want the capture group behavior so you add the "?:" to the beginning of the parentheses `(?:pattern1|pattern2)`. There is a reason capture groups cause problems in Netmiko, but that would be an even deeper white rabbit search.
+
+Anyways this fix didn't work :-)
 
 2. I noticed in the logging/debug output for the failure that an 'enter' (\n) was being sent just before the "Accept this agreement" message and it made me realize that this 'enter' was probably being interpreted by the ScreenOS device as a rejection of the "Accept this agreement". The literal message on the ScreenOS device is "Accept this agreement y/[n] ". So you can see the default for an "enter" is a "n" (i.e. reject the agreement). I was also seeing an "EOF received" message right after this "enter". So this was telling me that the remote device was closing the SSH channel right after the enter:
 
