@@ -19,13 +19,17 @@ Diverse set of items that I worked on this month:
 
 ## Open-source Sponsorship / Education / Support Packages
 
-For a long time I have realized that the open-source sponsorship model doesn't really work. This should not suprising at all—developers are basically saying I will do this work for free and holding out a tip jar.
+For a long time I have realized that the open-source sponsorship model doesn't really work. This should not be surprising, developers are basically saying "I will do this work for free" and then holding out a tip jar. This is not a workable business model.
 
-At AutoCon2 in Denver I decided that I would try a new model whereby I could continue supporting Netmiko and Nornir, but (hopefully) receive better rumerartion for this. This also related a bit to being somewhat done with maintaining open-source and feeling I didn't do a good job on it in 2023 and 2024.
+At AutoCon2 in Denver, I decided I would try a new model where (hopefully) I could continue supporting both Netmiko and Nornir, but receive increased financial support. I also felt that in 2023 and 2024, I had done a relatively poor job of maintaining Netmiko. Finally, I was somewhat losing interest in maintaining Netmiko and was not certain I wanted to continue doing so.
 
-In February, I started reading a bunch of articles on developers that had been successful in funding the maintenance on open-source projects. From this I started to formalize what the new structure would be. The new structure is a combination of education, sponsorship, and maintenance/support.
+In February, I read a bunch of articles on developers that had been (somewhat) successful in funding their open-source projects. From this I started to formalize a new structure which is a combination of education, sponsorship, and maintenance/support.
 
-In February, I also continued discussions with the team at Netpicker and Slurp'it regarding Netmiko sponsorhip. They use Netmiko internally and have also made meaningful contributions to open-source especially with the Mockit library. So thanks to Wim, Pieter, and the Netpicker/Slurp'it team. These products both look fairly interesting so you might want to check them out:
+At about the same time, I also continued discussions with the teams at Netpicker and Slurp'it regarding Netmiko sponsorship. Both of these products use Netmiko internally and they also have made meaningful contributions to open-source especially with the Mockit library. This ultimately lead to a Netmiko sponsorship from the Netpicker and Slurp'it teams.
+
+So thanks to Wim, Pieter, and the Netpicker/Slurp'it team. 
+
+These products both look fairly interesting so you might want to check them out:
 
 https://netpicker.io/   (Test the design, security and compliance of your network)
 https://slurpit.io/     (Easy network inventory discovery)
