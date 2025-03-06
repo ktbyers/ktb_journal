@@ -1,6 +1,6 @@
 # February
 
-Journal of things I worked on and some other items I accomplished in February of 2025. Not, the best month in terms of productivity—oh well.
+A journal of things I worked on, find interesting, and accomplished in February 2025. Not, the best month in terms of productivity—oh well.
 
 #### _"It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity"_
 
