@@ -25,9 +25,9 @@ At AutoCon2 in Denver, I decided I would try a new model where (hopefully) I cou
 
 In February, I read a bunch of articles on developers that had been (somewhat) successful in funding their open-source projects. From this I started to formalize a new structure which is a combination of education, sponsorship, and maintenance/support.
 
-At about the same time, I also continued discussions with the teams at Netpicker and Slurp'it regarding Netmiko sponsorship. Both of these products use Netmiko internally and they also have made meaningful contributions to open-source especially with the Mockit library. This ultimately lead to a Netmiko sponsorship from the Netpicker and Slurp'it teams.
+At about the same time, I also continued discussions with the teams at Netpicker and Slurp'it regarding Netmiko sponsorship. Both of these products use Netmiko internally and they also have made meaningful contributions to open-source especially with the Mockit library. This ultimately led to a Netmiko sponsorship from the Netpicker and Slurp'it teams.
 
-So thanks to Wim, Pieter, and the Netpicker/Slurp'it team. 
+So thanks to Wim, Pieter, and the Netpicker/Slurp'it team. :tada: 
 
 These products both look fairly interesting so you might want to check them out:
 
