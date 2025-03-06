@@ -56,24 +56,26 @@ I continue to use Cursor plus Composer as my main AI coding assistant.
 
 I did quite a bit of work on open-source work this month.
 
-I ended up creating, reviewing, and/or merging about ten pull requests in the Netmiko. 
+I ended up creating, reviewing, and/or merging about ten pull requests in the Netmiko repository. 
 
 Besides the Netmiko PR work, I also worked on numerous Netmiko issues, merged 1 pull-request for NAPALM-Ansible, and reviewed/merged two pull-requests for NAPALM. I also did a set of very minor dependency management for the NAPALM project.
 
-Probably the most interesting issue I worked on was a Juniper ScreenOS issue. Basically, ScreenOS can be configured to, "Accept this agreement" as part of the SSH login process. I fixed this issue originally in 2021, but a regression had occurred in Netmiko 4.x that had caused this to break again.
+Probably the most interesting issue I worked on was a Juniper ScreenOS issue. Basically, ScreenOS can be configured to, "Accept this agreement" as part of the SSH login process. I fixed this issue originally in 2021, but a regression had occurred in Netmiko 4.x that caused this to break again.
 
 I tried three different fixes for the problem:
 
-**Fix1** converted the matching regex pattern to a "non-capture" group.
+**Fix1** 
+
+This fix converted the matching regex pattern to a `non-capture` group.
 
 ```diff
 - pattern = rf"(Accept this|{terminator})"
 + pattern = rf"(?:Accept this|{terminator})"
 ```
 
-I implemented this fix as the debugging/logs indicated that the regex pattern was using parenthesis and I know from past experience (and from the log message) that parenthesis usage can be problematic.
+I implemented this fix as the debugging/logs indicated that the regex pattern was using parentheses and I know from past experience (and from the log message) that parentheses usage can be problematic.
 
-Basically, parenthesis in regex can be used as a logical-or (for example, `(pattern1|patern2)`) and it can also be used as a capture-group whereby you intend to save what is between the parenthesis so you can use it later. 
+Basically, parentheses in regex can be used as a logical-or (for example, `(pattern1|patern2)`) and it can also be used as a capture-group whereby you intend to save what is between the parentheses so you can use it later. 
 
 Usually, Netmiko patterns are using it for the logical-or case and you do NOT want the capture group behavior so you add the "?:" to the beginning of the parentheses `(?:pattern1|pattern2)`. There is a reason capture groups cause problems in Netmiko, but that would be an even deeper white rabbit search.
 
@@ -117,11 +119,13 @@ This fix also didn't work and closer inspection of `_test_channel_read()` and ho
 
 Looking at the logs after this fix revealed both the `enter` and the subsequent `EOF received` were still there. 🐛
 
+<br />
+
 **Fix3**
 
 This one worked. 🎉
 
-So I looked more closely at the Netmiko code, particularly what happens immediately after the SSH login finishes and I was lead to this:
+So I looked more closely at the Netmiko code, particularly what happens immediately after the SSH login finishes and I was led to this:
 
 ```python
     def _try_session_preparation(self, force_data: bool = True) -> None:
@@ -157,13 +161,17 @@ Anyways that was an interesting problem. 🙂
 
 <br />
 
-My last contribution in the open-source world was finally convincing the Juniper PyEZ folks to implement a fix for telnetlib and PyEZ. Basically PY3.13 decided to remove telnetlib from being included as part of the Python standard library. Consequently, other libraries that depended on telnetlib needed to implement some fix for it (in order to suppoort PY3.13).
+My last contribution in the open-source world was finally convincing the Juniper PyEZ folks to implement a fix for telnetlib and PyEZ. 
 
-I had fixed this in Netmiko in June of 2024, but had been unable to fix it in NAPALM since NAPALM depends on PyEZ. This had been an outstanding issue in PyEZ since at least Sept of 2024 (PY3.13 was officially released in October of 2024). I proposed a fix for it in November of 2024 (or at least told them what I did for Netmiko). I created a PR to PyEZ for it in December of 2024.
+Basically Python 3.13 removed telnetlib from the Python standard library. Consequently, other libraries that use telnetlib needed to implement a fix for this (in order to support PY3.13).
+
+I fixed this in Netmiko in June of 2024, but had been unable to fix it in NAPALM since NAPALM depends on PyEZ (and PyEZ uses telnetlib in certain situations). 
+
+This issue had been an outstanding issue in PyEZ since at least September of 2024 (PY3.13 was officially released in October of 2024). I proposed a fix for it in November of 2024 (or at least told them what I did to fix this in Netmiko). I also created a pull-request (to PyEZ repository) for this in December of 2024.
 
 Then I nagged in various ways.
 
-Finally, in February I nagged more publicly and this got the issue fixed. I don't super like nagging publicly, but this issue did really need to get fixed.
+Finally, in February, I nagged more publicly and was able to get the issue fixed. I don't really like nagging publicly, but this issue did need to get fixed.
 
 
 ## Exercise and My Crazy Running Addiction
