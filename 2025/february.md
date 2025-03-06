@@ -94,13 +94,28 @@ So I looked more closely at the Netmiko code particularly what happens immediate
             raise
 ```
 
-So basically, very shortly after the SSH login process
+So basically, very shortly after the SSH login process Netmiko wants to call the `session_preparation` method, but `session_preparation` generally requires there to be data present for reading so by default I send an "enter".
 
-## Open Source Work (Netmiko / NAPALM / Nornir)
+The simple fix was to not send the "enter" by overriding the `_try_session_preparation()` method in the child class:
 
-Merged about 10 pull requests in the Netmiko project. Merged 1 pull request for napalm-ansible. Reviewed/merged two pull-requests for napalm. Merged a bunch of very minor dependency management pull-requests for NAPALM.
+```python
+    def _try_session_preparation(self, force_data: bool = False) -> None:
+        return super()._try_session_preparation(force_data=force_data)
+```
 
-Convinced Juniper PyEZ to implement a fix for telnetlib and PyEZ (which was breaking PY3.13 support on both PyEZ and on NAPALM)
+There is a slight possibility that this fix will break things if the 'Accept this' banner is not present so I am trying to have that case regression tested.
+
+Anyways that was an interesting problem :-)
+
+Besides the Netmiko PR work, I also worked on numerous Netmiko issues, merged 1 pull-request for napalm-ansible and reviewed/merged two pull-requests for NAPALM. I also did a bunch of very minor dependency management for NAPALM.
+
+My last contribution in the open-source world was finally convincing the Juniper PyEZ folks to implement a fix for telnetlib and PyEZ. Basically PY3.13 decided to remove telnetlib from being included as part of the Python standard library. Consequently, other libraries that depended on telnetlib needed to implement some fix for it (in order to suppoort PY3.13).
+
+I had fixed this in Netmiko in June of 2024, but had been unable to fix it in NAPALM since NAPALM depends on PyEZ. This had been an outstanding issue in PyEZ since at least Sept of 2024 (PY3.13 was officially released in October of 2024). I proposed a fix for it in November of 2024 (or at least told them what I did for Netmiko). I created a PR to PyEZ for it in December of 2024.
+
+Then I nagged in various ways.
+
+Finally, in February I nagged more publicly and this got the issue fixed. I don't super like nagging publicly, but this issue did really need to get fixed.
 
 
 ## Exercise and My Crazy Running Addiction
@@ -113,19 +128,21 @@ Six days of skiing at Northstar.
 
 Favorite running trail of the month—Dipsea Trail from Stinson Beach to Cardiac and back again. It is hard to beat running downhill through the Moors and heading into Stinson Beach.
 
+In total, including the skiing was pretty happy with total exercise.
+
 
 ## Favorite Family Board Game
 
+We were still addicted to Terraforming Mars with Preludes. By the end of the month, I was a bit burned out on this game so we switched over and played Under Water Cities which I quite enjoyed.
 
 
 ## Favorite Song / Music
 
+Probably my favorite new song was "Love It If We Made It". Yes, I am pretty out of touch with pop culture so I might be five to ten years late on hearing a song.
 
 
 ## Courses and Misc
 
 Started Netmiko course instance number9. Probably the last standard session of this course that I will run.
 
-Started my free Learning Python for Network Engineers Course with about 1800 to 1900 sign-ups. Not sure what the main source of my sign-ups is.
-
-Finished my 2024 business taxes.
+Started my free Learning Python for Network Engineers Course also in February.
