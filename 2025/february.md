@@ -173,6 +173,7 @@ Then I nagged in various ways.
 
 Finally, in February, I nagged more publicly and was able to get the issue fixed. I don't really like nagging publicly, but this issue did need to get fixed.
 
+<br />
 
 ## Exercise and My Crazy Running Addiction
 
@@ -186,11 +187,13 @@ My favorite running trail of the month was the Dipsea Trail from Stinson Beach t
 
 In total, including the skiing I was pretty happy with my exercise in February.
 
+<br />
 
 ## Favorite Family Board Game
 
 We were fairly addicted to Terraforming Mars using both the Preludes and Colony Expansions. 
 
+<br />
 
 ## Courses and Misc
 
