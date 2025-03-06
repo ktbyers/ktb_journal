@@ -29,10 +29,11 @@ At about the same time, I also continued discussions with the teams at Netpicker
 
 So thanks to Wim, Pieter, and the Netpicker/Slurp'it team. :tada: 
 
-These products both look fairly interesting so you might want to check them out:
+These products both look fairly interesting so it might be worthwhile for you and your organization to investigate them:
 
-https://netpicker.io/   (Test the design, security and compliance of your network)
-https://slurpit.io/     (Easy network inventory discovery)
+- [https://netpicker.io/](https://netpicker.io/) - Test the design, security and compliance of your network
+- [https://slurpit.io/](https://slurpit.io/) - Easy network inventory discovery
+
 
 If this post leads you to being a Netpicker/Slurp please mention it to the Netpicker/Slurp'it folks as it will help my cause that Netmiko sponsorship is a win for them.
 
