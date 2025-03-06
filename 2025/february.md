@@ -113,11 +113,15 @@ Consequently, I implemented a fix whereby I guaranteed Netmiko would not send an
 +     data += self.read_until_pattern(pattern=terminator)
 ```
 
-This fix didn't work and closer inspection of how `_test_channel_read()` was being called revealed it would not send an "enter" in this case anyways. Looking at the logs after implementing this fix showed that the "enter" and subsequent "EOF received" were still there.
+This fix also didn't work and closer inspection of `_test_channel_read()` and how it was being called revealed it would not send additional `enters` anyways. 
 
-3. Fix number 3 (the one that worked)
+Looking at the logs after this fix revealed both the `enter` and the subsequent `EOF received` were still there. 🐛
 
-So I looked more closely at the Netmiko code particularly what happens immediately after the SSH login completes and I was lead to this:
+**Fix3**
+
+This one worked. 🎉
+
+So I looked more closely at the Netmiko code, particularly what happens immediately after the SSH login finishes and I was lead to this:
 
 ```python
     def _try_session_preparation(self, force_data: bool = True) -> None:
@@ -138,20 +142,20 @@ So I looked more closely at the Netmiko code particularly what happens immediate
             raise
 ```
 
-So basically, very shortly after the SSH login process Netmiko wants to call the `session_preparation` method, but `session_preparation` generally requires there to be data present for reading so by default I send an "enter".
+So basically, very shortly after the SSH login, Netmiko will prepare the SSH channel for reading by sending an `enter` (`force_data=True`) and then call `session_preparation`. **There is our magical, extra 'enter'.**
 
-The simple fix was to not send the "enter" by overriding the `_try_session_preparation()` method in the child class:
+The simple fix was to not send this `enter`. This was done by overriding the `_try_session_preparation()` method in the ScreenOS child class:
 
 ```python
     def _try_session_preparation(self, force_data: bool = False) -> None:
         return super()._try_session_preparation(force_data=force_data)
 ```
 
-There is a slight possibility that this fix will break things if the 'Accept this' banner is not present so I am trying to have that case regression tested.
+There is a slight possibility that this fix will break things if the `Accept this` banner is not present so I am trying to have this case regression tested.
 
-Anyways that was an interesting problem :-)
+Anyways that was an interesting problem. 🙂
 
-Besides the Netmiko PR work, I also worked on numerous Netmiko issues, merged 1 pull-request for napalm-ansible and reviewed/merged two pull-requests for NAPALM. I also did a bunch of very minor dependency management for NAPALM.
+<br />
 
 My last contribution in the open-source world was finally convincing the Juniper PyEZ folks to implement a fix for telnetlib and PyEZ. Basically PY3.13 decided to remove telnetlib from being included as part of the Python standard library. Consequently, other libraries that depended on telnetlib needed to implement some fix for it (in order to suppoort PY3.13).
 
