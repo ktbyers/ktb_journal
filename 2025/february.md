@@ -64,7 +64,7 @@ Probably the most interesting issue I worked on was a Juniper ScreenOS issue. Ba
 
 I tried three different fixes for the problem:
 
-1. Fix1 converted the matching regex pattern to a "non-capture" group.
+**Fix1** converted the matching regex pattern to a "non-capture" group.
 
 ```diff
 - pattern = rf"(Accept this|{terminator})"
@@ -77,24 +77,40 @@ Basically, parenthesis in regex can be used as a logical-or (for example, `(patt
 
 Usually, Netmiko patterns are using it for the logical-or case and you do NOT want the capture group behavior so you add the "?:" to the beginning of the parentheses `(?:pattern1|pattern2)`. There is a reason capture groups cause problems in Netmiko, but that would be an even deeper white rabbit search.
 
-Anyways this fix didn't work :-)
+Anyways this fix didn't work. :bug:
 
-2. I noticed in the logging/debug output for the failure that an 'enter' (\n) was being sent just before the "Accept this agreement" message and it made me realize that this 'enter' was probably being interpreted by the ScreenOS device as a rejection of the "Accept this agreement". The literal message on the ScreenOS device is "Accept this agreement y/[n] ". So you can see the default for an "enter" is a "n" (i.e. reject the agreement). I was also seeing an "EOF received" message right after this "enter". So this was telling me that the remote device was closing the SSH channel right after the enter:
+<br />
+
+**Fix2** 
+
+I noticed in the logging/debug output that there was an `enter` character (`\n`) being sent just before the `Accept this agreement` message. Additionally, immediately after the `enter` character was sent, the remote device closed the SSH channel (`EOF received` by Netmiko).
+
+These events made me realize that this `enter` was probably being interpreted by the ScreenOS device as a rejection of the `Accept this agreement` message. The literal message on the ScreenOS device is `Accept this agreement y/[n]`. Consequently, an `enter` will result in a `no` being sent (as `no` is the default here).
+
+From the debugging message:
 
 ```
 2025-02-25 14:11:23,097 DEBUG, netmiko, write_channel: b'\n'
 2025-02-25 14:11:23,177 DEBUG, paramiko.transport, [chan 0] EOF received (0)
 ```
 
-Now the question was—what in the heck is sending the extra "enter".
+Now the question was—what in the heck is sending the extra `enter`.
 
-My first thought was that it was due to Netmiko's `_test_channel_read()` method which is being called very shortly after the standard SSH login process has completed. This basically ensures Netmiko can read from the remote device. I (vaguely) recalled that this method in certain contexts might send "enters" in order to get data back. For example, to get the prompt to come back to you.
+My first thought was that this was due to Netmiko's `_test_channel_read()` method which is being called very shortly after the standard SSH login process has completed. 
 
-So I implemented a fix whereby I guaranteed I would not send any "enters" here.
+This method basically ensures Netmiko can read from the remote device. I (vaguely) recalled that this method might send "enters" in certain situations.
 
-```python
-pattern = rf"(?:Accept this.*|{terminator})"
-data = self.read_until_pattern(pattern=pattern)
+Consequently, I implemented a fix whereby I guaranteed Netmiko would not send any `enters` here. Basically, removing the `_test_channel_read()` calls with `read_until_pattern()` calls:
+
+```diff
+- pattern = rf"(?:Accept this|{terminator})"
+- data = self._test_channel_read(pattern=pattern)
++ pattern = rf"(?:Accept this.*|{terminator})"
++ data = self.read_until_pattern(pattern=pattern)
+  if "Accept this" in data:
+      self.write_channel("y")
+-     data += self._test_channel_read(pattern=terminator)
++     data += self.read_until_pattern(pattern=terminator)
 ```
 
 This fix didn't work and closer inspection of how `_test_channel_read()` was being called revealed it would not send an "enter" in this case anyways. Looking at the logs after implementing this fix showed that the "enter" and subsequent "EOF received" were still there.
