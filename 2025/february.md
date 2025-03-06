@@ -178,27 +178,22 @@ Finally, in February, I nagged more publicly and was able to get the issue fixed
 
 Ran about 124 miles in February with about 10,500 in elevation (roughly 18 runs and about 24 total hours running).
 
-Roughly seven other workouts during the month (roughly 4.5 hours, exercise bike, treadmill, some weights).
+I also did roughly seven other workouts during the month (~4.5 hours of exercise bike, treadmill, and some weights).
 
-Six days of skiing at Northstar.
+Finally, our family skied for six days at Northstar (near Lake Tahoe).
 
-Favorite running trail of the month—Dipsea Trail from Stinson Beach to Cardiac and back again. It is hard to beat running downhill through the Moors and heading into Stinson Beach.
+My favorite running trail of the month was the Dipsea Trail from Stinson Beach to Cardiac and back again. It is hard to beat running downhill through the Moors and heading into Stinson Beach.
 
-In total, including the skiing was pretty happy with total exercise.
+In total, including the skiing I was pretty happy with my exercise in February.
 
 
 ## Favorite Family Board Game
 
-We were still addicted to Terraforming Mars with Preludes. By the end of the month, I was a bit burned out on this game so we switched over and played Under Water Cities which I quite enjoyed.
-
-
-## Favorite Song / Music
-
-Probably my favorite new song was "Love It If We Made It". Yes, I am pretty out of touch with pop culture so I might be five to ten years late on hearing a song.
+We were fairly addicted to Terraforming Mars using both the Preludes and Colony Expansions. 
 
 
 ## Courses and Misc
 
-Started Netmiko course instance number9. Probably the last standard session of this course that I will run.
+Started Netmiko paid course instance nine. This is probably the last time I will run this course (at least in 2025).
 
-Started my free Learning Python for Network Engineers Course also in February.
+Started my free Learning Python for Network Engineers Course on February 18.
