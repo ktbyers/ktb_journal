@@ -8,13 +8,14 @@ A journal of things I worked on, find interesting, and accomplished in February 
 
 ## High level
 
-There were several miscellaneous things that I worked on this month:
-- New form of open-source sponsorship, education and support packages.
+Diverse set of items that I worked on this month:
+- New form of open-source sponsorship, education, and support packages.
 - Corporate training proposal.
 - Tool implementation and testing for my AI-RAG Ansible Course Slackbot.
 - Finished 2024 business taxes (good times).
-- Numerous contributions to both Netmiko and NAPALM projects (more details below).
+- Numerous contributions to both Netmiko and NAPALM projects.
 
+<br />
 
 ## Open-source Sponsorship / Education / Support Packages
 
