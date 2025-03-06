@@ -187,7 +187,7 @@ My favorite running trail of the month was the Dipsea Trail from Stinson Beach t
 
 In total, including the skiing I was pretty happy with my exercise in February.
 
-![Dipsea Moors Feb25](img/dipsea_moors.jpeg)
+<img src="img/dipsea_moors.jpeg" width="50%">
 
 <br />
 
