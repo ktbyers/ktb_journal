@@ -34,11 +34,13 @@ These products both look fairly interesting so it might be worthwhile for you an
 - [https://netpicker.io/](https://netpicker.io/) - Test the design, security and compliance of your network
 - [https://slurpit.io/](https://slurpit.io/) - Easy network inventory discovery
 
+<br />
 
-If this post leads you to being a Netpicker/Slurp please mention it to the Netpicker/Slurp'it folks as it will help my cause that Netmiko sponsorship is a win for them.
+_If this post leads you to being a Netpicker/Slurp customer please mention it to Wim, Pieter, and the Netpicker/Slurp'it folks (as this will help my cause that Netmiko sponsorship is a win for them)._
 
-I hope to have a web page open for these packages shortly, but currently it is left a work-in-process which we know is the great destroyer of all things.
+I hope to have a web page available for these new packages shortly, but currently it is left as work-in-process (somewhere Eliyahu Goldratt is looking down on me and upset at this).
 
+<br />
 
 ## AI Coding Items
 
