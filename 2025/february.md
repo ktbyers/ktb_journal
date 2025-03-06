@@ -36,27 +36,42 @@ These products both look fairly interesting so it might be worthwhile for you an
 
 <br />
 
-_If this post leads you to being a Netpicker/Slurp customer please mention it to Wim, Pieter, and the Netpicker/Slurp'it folks (as this will help my cause that Netmiko sponsorship is a win for them)._
+_If this post leads you to becoming a Netpicker/Slurp'it customer please mention it to Wim, Pieter, and the Netpicker/Slurp'it folks (as this will help my cause that Netmiko sponsorship is a win for them)._
 
-I hope to have a web page available for these new packages shortly, but currently it is left as work-in-process (somewhere Eliyahu Goldratt is looking down on me and upset at this).
+I hope to have a web page available for these new packages shortly, but currently it is left as work-in-progress (somewhere Eliyahu Goldratt is looking down on me and upset at this).
 
 <br />
 
 ## AI Coding Items
 
-I only did a minimal set of items here and mostly at the beginning of the month (so I am a bit disappointed with this). Basically, early in February I continued working on Ansible Course Slackbot / RAG solution. The part I worked on was adding some tool calling into the LLM to my code interface including tests for this code.
+I only did limited work here and mostly at the beginning of the month (so I am a bit disappointed on this).
+
+Early in February, I continued working on my Ansible Course Slackbot and RAG solution. I added some additional tool calling to the LLM interface including tests for this code.
 
 I continue to use Cursor plus Composer as my main AI coding assistant.
 
+<br />
 
 ## Open Source Work (Netmiko / NAPALM / Nornir)
 
-I did quite a bit of work on open-source this month. This was probably spurred a bit by my working on the open-source packages.
+I did quite a bit of work on open-source work this month.
 
-I ended up reviewing and merging about ten pull requests in the Netmiko. Probably the trickiest issue was a Juniper ScreenOS issue in cases where ScreenOS prompts to "Accept this agreement" as part of the SSH login process. I had fixed this issue originally in 2021, but some Netmiko 4.x changes had caused it to break again.
+I ended up creating, reviewing, and/or merging about ten pull requests in the Netmiko. 
+
+Besides the Netmiko PR work, I also worked on numerous Netmiko issues, merged 1 pull-request for NAPALM-Ansible, and reviewed/merged two pull-requests for NAPALM. I also did a set of very minor dependency management for the NAPALM project.
+
+Probably the most interesting issue I worked on was a Juniper ScreenOS issue. Basically, ScreenOS can be configured to, "Accept this agreement" as part of the SSH login process. I fixed this issue originally in 2021, but a regression had occurred in Netmiko 4.x that had caused this to break again.
 
 I tried three different fixes for the problem:
-1. Fix1 was to convert the matching regex pattern to be a "non-capture" group. I implemented this fix as Netmiko debugging indicated that the regex was using parenthesis for a regex pattern and this can be problematic in certain situations. Basically, parenthesis can be used as a logical-or (for example, '(pattern1|patern2)') and it can also be used as a capture-group whereby you intend to save what is between the parenthesis so you can use it later. Usually, Netmiko patterns are using it for the logical-or case and you do NOT want the capture group behavior so you add the "?:" to the beginning of the parentheses '(?:pattern1|pattern2)'. There is a reason capture groups cause problems in Netmiko, but we would need to dig even deeper into the code to explain it.
+
+1. Fix1 converted the matching regex pattern to a "non-capture" group.
+
+```diff
+- pattern = rf"(Accept this|{terminator})"
++ pattern = rf"(?:Accept this|{terminator})"
+```
+
+3.   I implemented this fix as Netmiko debugging indicated that the regex was using parenthesis for a regex pattern and this can be problematic in certain situations. Basically, parenthesis can be used as a logical-or (for example, '(pattern1|patern2)') and it can also be used as a capture-group whereby you intend to save what is between the parenthesis so you can use it later. Usually, Netmiko patterns are using it for the logical-or case and you do NOT want the capture group behavior so you add the "?:" to the beginning of the parentheses '(?:pattern1|pattern2)'. There is a reason capture groups cause problems in Netmiko, but we would need to dig even deeper into the code to explain it.
 
 Anyways that fix didn't work :-)
 
