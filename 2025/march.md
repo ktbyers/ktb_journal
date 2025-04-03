@@ -57,31 +57,31 @@ We started our Python Network Automation Course (session36) including the lab se
 
 ## Exercise and My Crazy Running Addiction
 
-Applied for the Dipsea 2025! Vamos!
+Applied for the Dipsea 2025. ¡Vamos!
 
 <img src="img/dipsea_envelope_2025.jpg" width="50%">
 
-I ran and cross-trained about 29 hours in March. I also had some sort of an illness that knocked me around for about five days (so there is a set of walking included in that 29 hours). This included about 125 miles of running and 11,400ft of elevation gain.
+I ran and cross-trained for about 29 hours in March. Due to my week of illness, this 29 hours includes some walking time (fudging the data). March had about 125 miles of running with 11,400ft of elevation gain.
 
 Unfortunately I had to DNS on the Big Alta 28K due to my illness. This was a bit of a bummer, but oh well.
 
-My pick-of-the month runnning trail was a Muir Woods loop—Pantol to Muir Woods via Stapleveld-Ben Johnson Trails and then up Canopy Trail and back to Pantol via Matt Davis. That was a good loop:
+My pick-of-the month for a good runnning trail was a Muir Woods loop. This loop started at Pantol and descended down into Muir Woods via the Stapleveld-Ben Johnson Trails. It then went through Muir Woods and back up out of the valley on Canopy Trail. Finally it looped back to Pantol via the Matt Davis Trail.
 
-https://www.strava.com/activities/13891571212
-i
+[Muir Woods Loop](https://www.strava.com/activities/13891571212)
+
 <img src="img/muire_woods_log_bridge.jpg" width="50%">
 
 <br />
 
 ## Favorite Family Board Game
 
-My wife and I have been continuing our two-person Castles of Burgundy battles. She won the last one--that is not going to work.
+My wife and I have a set of ongoing tattles in Castles of Burgundy. She won the last game—that is not going to work.
 
 
 <br />
 
-## Courses and Misc
-
 ## Books
 
-Mostly read Avogadro Corp about AI taking over. It was a good read, but not really believable. But I also probably run to the optimistic side on AI and human technology.
+I have mostly completed "Avogadro Corp". A fictional account of AI taking over. It was a good read, but not very believable. Note, I also run fairly optimistic when it comes to technology, AI, and human progress.
+
+<br />
