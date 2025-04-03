@@ -1,0 +1,90 @@
+# March
+
+A journal of things I worked on, find interesting, and accomplished in March 2025.
+
+#### _"I wish it need not have happened in my time," said Frodo._ 
+
+#### _"So do I," said Gandalf, "and so do all who live to see such times. But that is not for them to decide. All we have to decide is what to do with the time that is given us.”_
+
+I know that quote is cliche, but I still like it.
+<br />
+
+## High level
+
+Most of this month was spent working on:
+- My Ansible Course AI-RAG plus Slack system (more details on this below).
+- A lot of Netmiko pull-requests and issues.
+- In-person/Zoom training proposals and related contracts/quotes.
+- Miscellaneous personal tasks (mostly taxes)
+
+Reviewing and sending consulting agreement for training back to corporate client.
+Working on proposal/details for live training session in Europe
+
+Life stuff--got a bit of a respitory illness which knocked me around for four or five days and had some lingering effects for another ~5 days.
+
+<br />
+
+## AI Coding Items
+
+I got back into serious work on my AI-RAG Slack Q&A system.
+
+In March I worked on the following items pertaining to this system:
+- Added support for direct Slack commands pertaining to file operations ("/file list", "/file list classN", "/file get filename.txt").
+- Added associated tests for support of these Slack command operations.
+- Added class8 transcripts using AI-whisper to generate the transcripts.
+- Created a documented process for rebuilding my RAG system including adding the class8 transcripts.
+- Added Python coverage and pytest-cov to improve Python test coverage reporting.
+
+I am still using Cursor + Composer as my main AI coding system. While I am a big AI-coding fan at times it does feel like you are working with a forgetful, unintelligent assistant who doesn't pay attention and forgets what you just told them. Although it is still amazing that you can view a coding assistant as a forgetful, not very intelligent assistent.
+
+
+
+<br />
+
+## Open Source Work (Netmiko / NAPALM / Nornir)
+
+I did a bunch of things in the open-source world:
+- Closed and categorized a bunch of old Netmiko issues—down to 119 open issues as of April 3, 2025.
+- Closed and reviewed a bunch of Netmiko and NAPALM pull-requests—merged eleven Netmiko pull-requests and one napalm-ansible pull-request. Reviewed, provided feedback, potentially made updates on several other pull-requests.
+- Currently Netmiko has 19 open pull-requests.
+
+<br />
+
+## Online Training Courses
+
+Started Pyplus Online Course Session number 36 including lab server build out.
+
+<br />
+
+<br />
+
+## Exercise and My Crazy Running Addiction
+
+Applied for the Dipsea 2025! Vamos!
+
+
+Running/exercise 29 hours
+136.5 miles
+Had to DNS on the Big Alta 28K (due to my illness) which was a bit of a bummer, but oh well.
+11,400ft
+
+
+My pick-of-the month runnning trail:
+
+https://www.strava.com/activities/13891571212
+
+
+<br />
+
+## Favorite Family Board Game
+
+My wife and I have been continuing our two-person Castles of Burgundy battles. She won the last one--that is not going to work.
+
+
+<br />
+
+## Courses and Misc
+
+## Books
+
+Mostly read Avogadro Corp about AI taking over. It was a good read, but not really believable. But I also probably run to the optimistic side on AI and human technology.
