@@ -34,7 +34,7 @@ In March I worked on the following items for this system:
 
 I am still using Cursor + Composer as my main AI coding system. 
 
-While I am a big AI-coding fan, at times, it feels like you are working with a dumb, forgetful assistant who doesn't pay much attention. 
+_While I am a big AI-coding fan, at times, it feels like you are working with a dumb, forgetful assistant who doesn't pay much attention._ 
 
 Although it is still amazing that you can view an AI coding assistant as a forgetful, not very intelligent person (basically AI has come an amazing distance in the last few years).
 
