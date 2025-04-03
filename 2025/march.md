@@ -62,17 +62,17 @@ Started Pyplus Online Course Session number 36 including lab server build out.
 
 Applied for the Dipsea 2025! Vamos!
 
+<img src="img/dipsea_envelope_2025.jpg" width="50%">
 
-Running/exercise 29 hours
-136.5 miles
-Had to DNS on the Big Alta 28K (due to my illness) which was a bit of a bummer, but oh well.
-11,400ft
+I ran and cross-trained about 29 hours in March. I also had some sort of an illness that knocked me around for about five days (so there is a set of walking included in that 29 hours). This included about 125 miles of running and 11,400ft of elevation gain.
 
+Unfortunately I had to DNS on the Big Alta 28K due to my illness. This was a bit of a bummer, but oh well.
 
-My pick-of-the month runnning trail:
+My pick-of-the month runnning trail was a Muir Woods loop—Pantol to Muir Woods via Stapleveld-Ben Johnson Trails and then up Canopy Trail and back to Pantol via Matt Davis. That was a good loop:
 
 https://www.strava.com/activities/13891571212
-
+i
+<img src="img/muire_woods_log_bridge.jpg" width="50%">
 
 <br />
 
