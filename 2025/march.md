@@ -32,18 +32,20 @@ In March I worked on the following items for this system:
 - Created a documented process for rebuilding my RAG system including adding the class8 transcripts.
 - Added Python coverage and pytest-cov to improve Python test coverage reporting.
 
-I am still using Cursor + Composer as my main AI coding system. While I am a big AI-coding fan at times it does feel like you are working with a forgetful, unintelligent assistant who doesn't pay attention and forgets what you just told them. Although it is still amazing that you can view a coding assistant as a forgetful, not very intelligent assistent.
+I am still using Cursor + Composer as my main AI coding system. 
 
+While I am a big AI-coding fan, at times, it feels like you are working with a dumb, forgetful assistant who doesn't pay much attention. 
 
+Although it is still amazing that you can view an AI coding assistant as a forgetful, not very intelligent person (basically AI has come an amazing distance in the last few years).
 
 <br />
 
 ## Open Source Work (Netmiko / NAPALM / Nornir)
 
-I did a bunch of things in the open-source world:
-- Closed and categorized a bunch of old Netmiko issues—down to 119 open issues as of April 3, 2025.
-- Closed and reviewed a bunch of Netmiko and NAPALM pull-requests—merged eleven Netmiko pull-requests and one napalm-ansible pull-request. Reviewed, provided feedback, potentially made updates on several other pull-requests.
-- Currently Netmiko has 19 open pull-requests.
+I did a bunch of work in the open-source world:
+- Closed and categorized a bunch of old Netmiko issues—down to 119 open issues as of April 3, 2025. I know this is a lot, but it is a meaningful improvement from the end of February.
+- Closed and reviewed a bunch of Netmiko and NAPALM pull-requests. I merged eleven Netmiko pull-requests and one napalm-ansible pull-request. I reviewed, provided feedback, and potentially made updates on several other pull-requests.
+- Currently Netmiko has 19 open pull-requests. Once again this is a meaningful improvment from January/February.
 
 <br />
 
