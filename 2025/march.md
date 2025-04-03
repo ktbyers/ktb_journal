@@ -51,9 +51,7 @@ I did a bunch of work in the open-source world:
 
 ## Online Training Courses
 
-Started Pyplus Online Course Session number 36 including lab server build out.
-
-<br />
+We started our Python Network Automation Course (session36) including the lab server build out and the other miscellaneous items we need to do at the start of a course session.
 
 <br />
 
