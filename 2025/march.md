@@ -75,7 +75,7 @@ My pick-of-the month for a good runnning trail was a Muir Woods loop. This loop 
 
 ## Favorite Family Board Game
 
-My wife and I have a set of ongoing tattles in Castles of Burgundy. She won the last game—that is not going to work.
+My wife and I have a set of ongoing battles in Castles of Burgundy. She won the last game—that is not going to work.
 
 
 <br />
