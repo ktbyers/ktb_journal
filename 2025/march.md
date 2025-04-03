@@ -16,16 +16,16 @@ Most of this month was spent working on:
 - My Ansible Course AI-RAG plus Slack system (more details below).
 - Netmiko pull-requests and issues.
 - In-person/Zoom training proposals and related contracts and quotes.
-- Miscellaneous personal tasks (mostly taxes, house maintenance items)
+- Miscellaneous personal tasks (mostly taxes and house maintenance items)
 - Life stuff—had a respitory illness which knocked me around for a few days and then had some lingering effects for another ~five days.
 
 <br />
 
 ## AI Coding Items
 
-I got back into serious work on my AI-RAG Slack Q&A system.
+I got back into serious work on my AI-RAG plus Slack question and answer system.
 
-In March I worked on the following items pertaining to this system:
+In March I worked on the following items for this system:
 - Added support for direct Slack commands pertaining to file operations ("/file list", "/file list classN", "/file get filename.txt").
 - Added associated tests for support of these Slack command operations.
 - Added class8 transcripts using AI-whisper to generate the transcripts.
