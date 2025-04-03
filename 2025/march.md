@@ -82,6 +82,6 @@ My wife and I have a set of ongoing battles in Castles of Burgundy. She won the 
 
 ## Books
 
-I have mostly completed "Avogadro Corp". A fictional account of AI taking over. It was a good read, but not very believable. Note, I also run fairly optimistic when it comes to technology, AI, and human progress.
+I have mostly completed "Avogadro Corp". A fictional account of AI taking over. It was a good read, but not very believable. Note, I run fairly optimistic when it comes to technology, AI, and human progress.
 
 <br />
