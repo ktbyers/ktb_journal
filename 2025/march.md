@@ -69,7 +69,7 @@ My pick-of-the month for a good runnning trail was a Muir Woods loop. This loop 
 
 [Muir Woods Loop](https://www.strava.com/activities/13891571212)
 
-<img src="img/muire_woods_log_bridge.jpg" width="50%">
+<img src="img/muir_woods_log_bridge.jpg" width="50%">
 
 <br />
 
