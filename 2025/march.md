@@ -7,6 +7,7 @@ A journal of things I worked on, find interesting, and accomplished in March 202
 #### _"So do I," said Gandalf, "and so do all who live to see such times. But that is not for them to decide. All we have to decide is what to do with the time that is given us.”_
 
 I know that quote is cliche, but I still like it.
+
 <br />
 
 ## High level
