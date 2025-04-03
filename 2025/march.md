@@ -13,15 +13,11 @@ I know that quote is cliche, but I still like it.
 ## High level
 
 Most of this month was spent working on:
-- My Ansible Course AI-RAG plus Slack system (more details on this below).
-- A lot of Netmiko pull-requests and issues.
-- In-person/Zoom training proposals and related contracts/quotes.
-- Miscellaneous personal tasks (mostly taxes)
-
-Reviewing and sending consulting agreement for training back to corporate client.
-Working on proposal/details for live training session in Europe
-
-Life stuff--got a bit of a respitory illness which knocked me around for four or five days and had some lingering effects for another ~5 days.
+- My Ansible Course AI-RAG plus Slack system (more details below).
+- Netmiko pull-requests and issues.
+- In-person/Zoom training proposals and related contracts and quotes.
+- Miscellaneous personal tasks (mostly taxes, house maintenance items)
+- Life stuff—had a respitory illness which knocked me around for a few days and then had some lingering effects for another ~five days.
 
 <br />
 
